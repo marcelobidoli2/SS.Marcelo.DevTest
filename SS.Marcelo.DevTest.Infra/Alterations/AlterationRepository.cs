@@ -25,16 +25,16 @@ namespace SS.Marcelo.DevTest.Infra.Alterations
 			return _context.Alterations;
 		}
 
-		public bool AlterStatus(Alteration alterationNewStatus)
+		public bool AlterStatus(Alteration alteration)
 		{
-			this._context.Alterations = this._context.Alterations.Where(a => a.Id != alterationNewStatus.Id).ToList();
-			this._context.Alterations.Add(alterationNewStatus);
+			this._context.Alterations = this._context.Alterations.Where(a => a.Id != alteration.Id).ToList();
+			this._context.Alterations.Add(alteration);
 
 			return true;
 		}
 
 		public void Create(Alteration alteration)
-		{
+		{	
 			this._context.Alterations.Add(alteration);
 		}
 	}

@@ -3,6 +3,7 @@
 	public enum EAlterationSide
 	{
 		Left,
-		Right
+		Right,
+		Both
 	}
 }

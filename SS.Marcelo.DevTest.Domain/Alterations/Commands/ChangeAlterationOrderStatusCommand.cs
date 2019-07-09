@@ -8,5 +8,6 @@ namespace SS.Marcelo.DevTest.Domain.Alterations.Commands
 	{
 		public Guid	AlterationId { get; set; }
 		public EAlterationStatus AlterationStatus { get; set; }
+		public DateTime? PickupDate { get; set; }
 	}
 }
