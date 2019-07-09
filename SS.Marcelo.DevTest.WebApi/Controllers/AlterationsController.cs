@@ -36,7 +36,7 @@ namespace SS.Marcelo.DevTest.WebApi.Controllers
 		}
 
 		[HttpPost]
-		public async Task<IActionResult> Create([FromBody] CreateAlterationCommand createAlterationCommand)
+		public async Task<IActionResult> Create([FromBody] CreateAlterationsOrderCommand createAlterationCommand)
 		{
 			if(createAlterationCommand is null) { return BadRequest($"{nameof(createAlterationCommand)} must be valid"); }
 

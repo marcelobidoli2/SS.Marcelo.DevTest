@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace SS.Marcelo.DevTest.Domain.Alterations.Handlers
 {
 	public class AlterationHandler :
-		IRequestHandler<CreateAlterationCommand, Alteration>,
+		IRequestHandler<CreateAlterationsOrderCommand, Alteration>,
 		IRequestHandler<ChangeAlterationOrderStatusCommand>
 	{
 		private readonly IAlterationRepository _alterationRepository;
@@ -21,9 +21,9 @@ namespace SS.Marcelo.DevTest.Domain.Alterations.Handlers
 			this._mediator = mediator;
 		}
 
-		public async Task<Alteration> Handle(CreateAlterationCommand request, CancellationToken cancellationToken)
+		public async Task<Alteration> Handle(CreateAlterationsOrderCommand request, CancellationToken cancellationToken)
 		{
-			var customer = new Customer(request.CustomerId, request.CustomerName, request.CustomerEmail);
+			var customer = new Customer(request.CustomerName, request.CustomerEmail);
 			var alteration = new Alteration(customer, request.Side, request.AlterationSize, request.AlterationType);
 
 			_alterationRepository.Create(alteration);

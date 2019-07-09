@@ -9,7 +9,7 @@ namespace SS.Marcelo.DevTest.Infra.Context
 	{
 		public DBContext()
 		{
-			var customer = new Customer(Guid.NewGuid().ToString(), "Marcelo Bidoli", "Marcelo@bidoli.com");
+			var customer = new Customer("Marcelo Bidoli", "Marcelo@bidoli.com");
 			this.Alterations = new List<Alteration>();
 			this.Alterations.Add(new Alteration(customer, EAlterationSide.Left, 3.2D, EAlterationType.Sleeve));
 			this.Alterations.Add(new Alteration(customer, EAlterationSide.Right, 2.2D, EAlterationType.Sleeve));

@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29025.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SS.Marcelo.DevTest.Domain", "SS.Marcelo.DevTest.Domain\SS.Marcelo.DevTest.Domain.csproj", "{B6A8D318-C4DA-437F-901E-53A87A67268D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SS.Marcelo.DevTest.Domain", "SS.Marcelo.DevTest.Domain\SS.Marcelo.DevTest.Domain.csproj", "{B6A8D318-C4DA-437F-901E-53A87A67268D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SS.Marcelo.DevTest.WebApi", "SS.Marcelo.DevTest.WebApi\SS.Marcelo.DevTest.WebApi.csproj", "{1F35C357-4572-48EE-85AB-BE3EB379F52B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SS.Marcelo.DevTest.WebApi", "SS.Marcelo.DevTest.WebApi\SS.Marcelo.DevTest.WebApi.csproj", "{1F35C357-4572-48EE-85AB-BE3EB379F52B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SS.Marcelo.DevTest.Infra", "SS.Marcelo.DevTest.Infra\SS.Marcelo.DevTest.Infra.csproj", "{C81C3E5F-641C-48F6-A412-9275296F7A48}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SS.Marcelo.DevTest.Infra", "SS.Marcelo.DevTest.Infra\SS.Marcelo.DevTest.Infra.csproj", "{C81C3E5F-641C-48F6-A412-9275296F7A48}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{6F20E3AD-20B4-4FFD-93E0-9B1A6670C3F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SS.Marcelo.DevTest.Tests", "SS.Marcelo.DevTest.Tests\SS.Marcelo.DevTest.Tests.csproj", "{393EF0B9-65AB-41CA-B133-C105F15AE5D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,9 +31,16 @@ Global
 		{C81C3E5F-641C-48F6-A412-9275296F7A48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C81C3E5F-641C-48F6-A412-9275296F7A48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C81C3E5F-641C-48F6-A412-9275296F7A48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{393EF0B9-65AB-41CA-B133-C105F15AE5D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{393EF0B9-65AB-41CA-B133-C105F15AE5D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{393EF0B9-65AB-41CA-B133-C105F15AE5D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{393EF0B9-65AB-41CA-B133-C105F15AE5D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{393EF0B9-65AB-41CA-B133-C105F15AE5D6} = {6F20E3AD-20B4-4FFD-93E0-9B1A6670C3F0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {0FAE1596-84CF-4A8C-A9B8-5C7B712659E3}
